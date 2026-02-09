@@ -85,6 +85,7 @@
     <element xsi:type="archimate:DataObject" name="Order_paid" id="id-49a1e453414a41a1bb1e978b1773dabc"/>
     <element xsi:type="archimate:DataObject" name="Dump_orders_par heure" id="id-edb04a6b49484fdcbeb12a56f993e29e"/>
     <element xsi:type="archimate:ApplicationComponent" name="Tableau" id="id-bf684de75b134d518b53ddcfbc9ac420"/>
+    <element xsi:type="archimate:ApplicationComponent" name="PowerBI" id="id-2262bdf88bba40489e711927934decb4"/>
   </folder>
   <folder name="Technology &amp; Physical" id="id-21e3af686c2e49cd976cf758359eeb5e" type="technology">
     <element xsi:type="archimate:Artifact" name="Order.tbl" id="id-5cef801f42ef435da11988e73e6290bd"/>
@@ -261,6 +262,7 @@
     <element xsi:type="archimate:RealizationRelationship" id="id-fedd72fe46664805ac1a5d52a017bcda" source="id-a11870ac29724892a4429a894860633e" target="id-8a95fc5512ed4e9f9e4f5f48c4873d50"/>
     <element xsi:type="archimate:InfluenceRelationship" id="id-ad2cc069c3ff4744a92296f259de5b98" source="id-55887749ccf34b8e9eb99f7e4b1e686d" target="id-ecaec59cb8bb47a9ad67b5aaf479a00f"/>
     <element xsi:type="archimate:TriggeringRelationship" id="id-55c80811eb3245ff8e779b33597917a6" source="id-3fae594fcef6452e9bebb90e4f1c9814" target="id-bf684de75b134d518b53ddcfbc9ac420"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="id-eee7200ac69641b7ac2671ad9fd5563b" source="id-3fae594fcef6452e9bebb90e4f1c9814" target="id-2262bdf88bba40489e711927934decb4"/>
   </folder>
   <folder name="Views" id="id-d89c282a76724f028e4e1c892056c2d0" type="diagrams">
     <folder name="Autres" id="id-42dba95054644b668de7e300099b0c7f">
@@ -639,6 +641,7 @@
           <child xsi:type="archimate:DiagramObject" id="id-7d055e03daa54701b38c289f4ec2370b" targetConnections="id-844e6ab10b214d0c881cef664d478ab3" archimateElement="id-3fae594fcef6452e9bebb90e4f1c9814">
             <bounds x="2088" y="476" width="241" height="47"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-2f961f84069e45498752003a3e6e2403" source="id-7d055e03daa54701b38c289f4ec2370b" target="id-adc61e914904435a81d00638c1a5589e" archimateRelationship="id-55c80811eb3245ff8e779b33597917a6"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-03251984d772455cbcceb575c883b995" source="id-7d055e03daa54701b38c289f4ec2370b" target="id-0556760e7fb34aeabe580cdce19fb017" archimateRelationship="id-eee7200ac69641b7ac2671ad9fd5563b"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-e63bc5ba56ef49848962774d20dac866" targetConnections="id-836f6e7a112d4917abdc3abb5198a377 id-3c2340d37f424c6bbe591ad0f818e6f2" archimateElement="id-7eb773b5e2a84362aa068018a2082f88">
             <bounds x="852" y="313" width="385" height="197"/>
@@ -717,6 +720,9 @@
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-adc61e914904435a81d00638c1a5589e" targetConnections="id-2f961f84069e45498752003a3e6e2403" archimateElement="id-bf684de75b134d518b53ddcfbc9ac420">
             <bounds x="2076" y="192" width="140" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-0556760e7fb34aeabe580cdce19fb017" targetConnections="id-03251984d772455cbcceb575c883b995" archimateElement="id-2262bdf88bba40489e711927934decb4">
+            <bounds x="1836" y="210" width="140" height="55"/>
           </child>
         </child>
         <documentation>Objectif: montrer comment les Data Objects circulent entre applications et quels processus métier ils supportent</documentation>
